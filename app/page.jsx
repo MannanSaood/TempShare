@@ -46,7 +46,7 @@ const Home = (list, setter) => {
             <span className="text-2xl font-mono text-red-400">Create A Temporary File Share</span>
             <div className='border-2 m-6 border-slate-500 py-3 border-dashed rounded w-3/4 h-full  flex flex-col justify-center items-center'>
             <label className='text-xl pb-3 font-mono text-gray-600'>Select a File</label>
-            <input className='file:bg-inherit cursor-pointer file:cursor-pointer file:border-none file:text-slate-600 text-slate-600  file:px-6 file:py-3 file:rounded-lg bg-gradient-to-b border-none  from-slate-50 to-gray-200 px-8 py-4 rounded-2xl' title='' type="file" onChange={onFileChange} />
+            <input multiple accept=".zip,.rar,.7zip,.tar,.gz,.xz,.s7z,.dmg,,.tar.gz, .tgz, .tar.Z, .tar.bz2,.tbz2, .tar.lz, .tlz, .tar.xz, .txz, .tar.zst,.xar,.zipx," className='file:bg-inherit cursor-pointer file:cursor-pointer file:border-none file:text-slate-600 text-slate-600  file:px-6 file:py-3 file:rounded-lg bg-gradient-to-b border-none  from-slate-50 to-gray-200 px-8 py-4 rounded-2xl' title='' type="file" onChange={onFileChange} />
             <br/>
             <button className='h-auto w-auto px-12 bg-red-400 rounded-md p-2 ' onClick={onFileUpload}>
                 Upload!
