@@ -1,0 +1,7 @@
+-- CreateTable
+CREATE TABLE "share" (
+    "id" TEXT NOT NULL PRIMARY KEY,
+    "name" TEXT NOT NULL,
+    "status" BOOLEAN NOT NULL,
+    "uploadedAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
